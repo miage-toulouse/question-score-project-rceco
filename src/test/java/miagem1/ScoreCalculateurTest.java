@@ -36,7 +36,7 @@ public class ScoreCalculateurTest {
         reponses.add(reponses.size(),2);
         reponses.add(reponses.size(),3);
         // Then : on obtient 2*100/3 à 0,01 près comme résultat ;
-        result = (2f*100f)/3f;
+        result = (2*100)/3f;
         assertEquals(result,calc.calculeScore(reponses,q1), 0.01f);
 
         // Given : quand on calcule le score pour une liste de réponses contenant les valeurs 2, 3 et 5,
